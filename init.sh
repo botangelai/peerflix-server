@@ -9,6 +9,8 @@ if [[ -e ${VPNCONF} ]]; then
   fi
   sg vpn -c "openvpn --config ${VPNCONF} --daemon"
   echo "nameserver 8.8.8.8" > /etc/resolv.conf
+else
+   echo "no VPN config found"
 fi
 
 npm start
