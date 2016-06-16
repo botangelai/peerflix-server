@@ -13,4 +13,4 @@ ExecStop= /usr/bin/docker stop -t 2 pf_srv
 #; /usr/bin/docker rm -f pf_srv
 
 [Install]
-WantedBy=local.target
+WantedBy=multi-user.target
